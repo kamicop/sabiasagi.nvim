@@ -1,5 +1,5 @@
-local coldnight = require("coldnight.colors")
 local M = {}
+local coldnight = require("coldnight.colors")
 
 M.loadSyntax = function()
 	-- Syntax highlight groups
@@ -37,7 +37,6 @@ M.loadSyntax = function()
 		markdownH1Delimiter = { fg = coldnight.color6 },
 		markdownH2Delimiter = { fg = coldnight.color1 },
 		markdownH3Delimiter = { fg = coldnight.color2 },
-
 		-- bold
 		htmlH1 = { fg = coldnight.color6, style = "bold" },
 		htmlH2 = { fg = coldnight.color1, style = "bold" },
@@ -204,7 +203,6 @@ M.loadTreeSitter = function()
 		["@text.underline"] = { fg = coldnight.shade5, bg = coldnight.none, style = "underline" },
 		["@text.literal"] = { fg = coldnight.shade5 },
 		["@text.uri"] = { fg = coldnight.color2 },
-
 		-- bold
 		TSVariableBuiltin = { fg = coldnight.shade5, style = "bold" },
 		TSBoolean = { fg = coldnight.color4, style = "bold" },
@@ -238,7 +236,6 @@ M.loadTreeSitter = function()
 		TSStringRegex = { fg = coldnight.color14, style = "italic" },
 		TSStringEscape = { fg = coldnight.color5, style = "italic" },
 		TSCharacter = { fg = coldnight.color2, style = "italic" },
-
 		["@comment"] = { fg = coldnight.shade4, style = "italic" },
 		["@conditional"] = { fg = coldnight.color4, style = "italic" },
 		["@function"] = { fg = coldnight.color6, style = "italic" },
@@ -286,7 +283,6 @@ M.loadLSP = function()
 		LspReferenceText = { fg = coldnight.shade5, bg = coldnight.shade1 },
 		LspReferenceRead = { fg = coldnight.shade5, bg = coldnight.shade1 },
 		LspReferenceWrite = { fg = coldnight.shade5, bg = coldnight.shade1 },
-
 		DiagnosticError = { link = "LspDiagnosticsDefaultError" },
 		DiagnosticWarn = { link = "LspDiagnosticsDefaultWarning" },
 		DiagnosticInfo = { link = "LspDiagnosticsDefaultInformation" },
