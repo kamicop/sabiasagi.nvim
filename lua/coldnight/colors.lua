@@ -23,9 +23,9 @@ local dark_colors = {
 	shade6 = "#E5E9F0", -- Ansi White, term7
 	shade7 = "#ECEFF4", -- Bright White, term15
 
-	color1 = named_color.red, -- Amsi Red, term1
+	color1 = named_color.red, -- Ansi Red, term1
 	color9 = named_color.red, -- Bright Red, term9
-	color2 = named_color.green, -- Amsi Green, term2
+	color2 = named_color.green, -- Ansi Green, term2
 	color10 = named_color.green, -- Bright Green, term10
 	color3 = named_color.yellow, -- Ansi Yellow, term3
 	color11 = named_color.yellow, -- Bright Yellow, term11
@@ -42,7 +42,7 @@ local dark_colors = {
 	none = "NONE",
 }
 
-if vim.o.background then
+if vim.o.background == "dark" then
 	dark_colors.float = dark_colors.background
 	dark_colors.sidebar = dark_colors.shade1
 	dark_colors.cursorlinefg = dark_colors.shade1
