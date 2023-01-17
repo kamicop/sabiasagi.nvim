@@ -1,29 +1,52 @@
-local dark_colors = {
-	--16 colors
-	cn0_gui = "#2E3440",
-	cn1_gui = "#3B4252",
-	cn2_gui = "#434C5E",
-	cn3_gui = "#4C566A",
-	cn3_gui_bright = "#616E88",
-	cn4_gui = "#D8DEE9",
-	cn5_gui = "#E5E9F0",
-	cn6_gui = "#ECEFF4",
-	cn7_gui = "#8FBCBB",
-	cn8_gui = "#88C0D0",
-	cn9_gui = "#81A1C1",
-	cn10_gui = "#5E81AC",
-	cn11_gui = "#BF616A",
-	cn12_gui = "#D08770",
-	cn13_gui = "#EBCB8B",
-	cn14_gui = "#A3BE8C",
-	cn15_gui = "#B48EAD",
-	none = "NONE",
-
+local named_color = {
 	background = "#212121",
-	float = "#212121",
-	sidebar = "#3B4252", -- ch1_gui
-	cursorlinefg = "#3B4252", -- ch1_gui
+	teal = "#8FBCBB",
+	cyan = "#88C0D0",
+	light_blue = "#81A1C1",
+	blue = "#5E81AC",
+	red = "#BF616A",
+	orange = "#D08770",
+	yellow = "#EBCB8B",
+	green = "#A3BE8C",
+	magenta = "#B48EAD",
 }
+
+local dark_colors = {
+	background = named_color.background,
+
+	shade0 = "#2E3440",
+	shade1 = "#3B4252", -- Ansi Black , term0
+	shade2 = "#434C5E",
+	shade3 = "#4C566A", -- Bright Black, term8
+	shade4 = "#616E88",
+	shade5 = "#D8DEE9",
+	shade6 = "#E5E9F0", -- Ansi White, term7
+	shade7 = "#ECEFF4", -- Bright White, term15
+
+	color1 = named_color.red, -- Amsi Red, term1
+	color9 = named_color.red, -- Bright Red, term9
+	color2 = named_color.green, -- Amsi Green, term2
+	color10 = named_color.green, -- Bright Green, term10
+	color3 = named_color.yellow, -- Ansi Yellow, term3
+	color11 = named_color.yellow, -- Bright Yellow, term11
+	color4 = named_color.blue, -- Ansi Blue, term4
+	color12 = named_color.light_blue, -- Ansi Blue, term12
+	color5 = named_color.magenta, -- Ansi Magenta. term5
+	color13 = named_color.magenta, -- Bright Magenta. term13
+	color6 = named_color.teal, -- Ansi Cyan, term3, term6
+	color14 = named_color.cyan, -- Bright Cyan, term14
+
+	color15 = named_color.blue,
+	color16 = named_color.orange,
+
+	none = "NONE",
+}
+
+if vim.o.background then
+	dark_colors.float = dark_colors.background
+	dark_colors.sidebar = dark_colors.shade1
+	dark_colors.cursorlinefg = dark_colors.shade1
+end
 
 -- light colorsを作ったら後者をlight_colorsに変更する
 local coldnight = (vim.o.background == "dark") and dark_colors or dark_colors
