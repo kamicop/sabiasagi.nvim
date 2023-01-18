@@ -1,5 +1,5 @@
 local M = {}
-local coldnight = require("coldnight.theme")
+local themes = require("sabiasagi.theme")
 
 M.highlight = function(group, color)
 	local style = color.style and "gui=" .. color.style or "gui=NONE"
@@ -29,21 +29,21 @@ function M.load()
 	end
 	-- vim.o.background = "dark"
 	vim.o.termguicolors = true
-	vim.g.colors_name = "coldnight"
+	vim.g.colors_name = "sabiasagi"
 
 	-- load the most importaint parts of the theme
-	local editor = coldnight.loadEditor()
-	local syntax = coldnight.loadSyntax()
-	local treesitter = coldnight.loadTreeSitter()
-	local plugins = coldnight.loadPlugins()
-	local lsp = coldnight.loadLSP()
+	local editor = themes.loadEditor()
+	local syntax = themes.loadSyntax()
+	local treesitter = themes.loadTreeSitter()
+	local plugins = themes.loadPlugins()
+	local lsp = themes.loadLSP()
 
 	M.loadColorSet(editor)
 	M.loadColorSet(syntax)
 	M.loadColorSet(treesitter)
 	M.loadColorSet(lsp)
 	M.loadColorSet(plugins)
-	coldnight.loadTerminal()
+	themes.loadTerminal()
 end
 
 return M

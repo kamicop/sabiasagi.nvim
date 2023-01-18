@@ -1,5 +1,5 @@
-local util = require("coldnight.util")
 local M = {}
+local util = require("sabiasagi.util")
 
 function M.set()
 	-- local file = vim.fn.expand("%:p") -- 現在開いているファイルパスを取得
