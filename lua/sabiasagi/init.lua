@@ -1,7 +1,7 @@
-local M = {}
 local util = require("sabiasagi.util")
+local bufferline = require("bufferline.theme")
 
-function M.set()
+local set = function()
 	-- local file = vim.fn.expand("%:p") -- 現在開いているファイルパスを取得
 	-- -- vim.cmd("vsplit | terminal")
 	-- -- local command = ':call jobsend(b:terminal_job_id, "jest ' .. file .. '\\n")'
@@ -9,4 +9,4 @@ function M.set()
 	util.load()
 end
 
-return M
+return { set = set, bufferline = bufferline }

@@ -2,11 +2,11 @@ local named_color = {
 	background = "#212121",
 
 	-- sabiasagi
-	shade0 = "#2d332a",
-	shade1 = "#373d34",
-	shade2 = "#41473e",
-	shade3 = "#555a52",
-	shade4 = "#5f645c",
+	shade0 = "#2c2c2c",
+	shade1 = "#373736",
+	shade2 = "#4c4d4b",
+	shade3 = "#575855",
+	shade4 = "#61635f",
 	shade5 = "#dfe3dc",
 	shade6 = "#e9ede6",
 	shade7 = "#f3f7f0",
@@ -19,25 +19,6 @@ local named_color = {
 	yellow = "#a39a52",
 	green = "#8da352",
 	magenta = "#9d72a3",
-
-	-- nord
-	-- shade0 = "#2E3440",
-	-- shade1 = "#3B4252",
-	-- shade2 = "#434C5E",
-	-- shade3 = "#4C566A",
-	-- shade4 = "#616E88",
-	-- shade5 = "#D8DEE9",
-	-- shade6 = "#E5E9F0",
-	-- shade7 = "#ECEFF4",
-	-- teal = "#8FBCBB",
-	-- cyan = "#88C0D0",
-	-- light_blue = "#81A1C1",
-	-- blue = "#5E81AC",
-	-- red = "#BF616A",
-	-- orange = "#D08770",
-	-- yellow = "#EBCB8B",
-	-- green = "#A3BE8C",
-	-- magenta = "#B48EAD",
 }
 
 local dark_colors = {
@@ -52,6 +33,7 @@ local dark_colors = {
 	shade6 = named_color.shade6, -- Ansi White, term7
 	shade7 = named_color.shade7, -- Bright White, term15
 
+	-- no color7 & 8
 	color1 = named_color.red, -- Ansi Red, term1
 	color9 = named_color.red, -- Bright Red, term9
 	color2 = named_color.green, -- Ansi Green, term2
@@ -72,7 +54,7 @@ local dark_colors = {
 }
 
 if vim.o.background == "dark" then
-	dark_colors.float = dark_colors.background
+	dark_colors.float = dark_colors.none
 	dark_colors.sidebar = dark_colors.shade1
 	dark_colors.cursorlinefg = dark_colors.shade1
 end
