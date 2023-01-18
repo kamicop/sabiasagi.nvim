@@ -22,16 +22,14 @@ function M.loadColorSet(colorSet)
 end
 
 function M.load()
-	-- Set the theme environment
 	vim.cmd("hi clear")
 	if vim.fn.exists("syntax_on") then
 		vim.cmd("syntax reset")
 	end
-	-- vim.o.background = "dark"
+
 	vim.o.termguicolors = true
 	vim.g.colors_name = "sabiasagi"
 
-	-- load the most importaint parts of the theme
 	local editor = themes.loadEditor()
 	local syntax = themes.loadSyntax()
 	local treesitter = themes.loadTreeSitter()

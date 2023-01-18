@@ -1,7 +1,4 @@
--- weztermの任意のフォルダに同内容をコピーし利用する
-
 local colors = {
-	-- sabiasagi
 	background = "#212121",
 	shade0 = "#2c2c2c",
 	shade1 = "#373736",
