@@ -1,4 +1,5 @@
 local named_color = {
+	darker_background = "#1a1a1a",
 	background = "#212121",
 
 	-- sabiasagi
@@ -22,6 +23,7 @@ local named_color = {
 }
 
 local dark_colors = {
+	darker_background = named_color.darker_background,
 	background = named_color.background,
 
 	shade0 = named_color.shade0,
@@ -55,7 +57,7 @@ local dark_colors = {
 
 if vim.o.background == "dark" then
 	dark_colors.float = dark_colors.none
-	dark_colors.sidebar = dark_colors.shade1
+	dark_colors.sidebar = dark_colors.darker_background
 	dark_colors.cursorlinefg = dark_colors.shade1
 end
 

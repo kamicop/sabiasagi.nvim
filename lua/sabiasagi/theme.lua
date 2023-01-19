@@ -4,7 +4,7 @@ local colors = require("sabiasagi.colors")
 M.loadSyntax = function()
 	-- Syntax highlight groups
 	local syntax = {
-		Normal = { fg = colors.shade5, bg = colors.background },
+		Normal = { fg = colors.shade5, bg = colors.none },
 		Type = { fg = colors.color4 },
 		StorageClass = { fg = colors.color4 },
 		Structure = { fg = colors.color4 },
