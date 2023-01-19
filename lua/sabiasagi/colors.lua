@@ -2,7 +2,6 @@ local named_color = {
 	darker_background = "#1a1a1a",
 	background = "#212121",
 
-	-- sabiasagi
 	shade0 = "#2c2c2c",
 	shade1 = "#373736",
 	shade2 = "#4c4d4b",
@@ -11,15 +10,16 @@ local named_color = {
 	shade5 = "#dfe3dc",
 	shade6 = "#e9ede6",
 	shade7 = "#f3f7f0",
+
 	teal = "#6699A1", -- 錆浅葱
-	cyan = "#80a5b6",
-	light_blue = "#6686a1",
-	blue = "#678fb1",
-	red = "#a16666",
-	orange = "#a18766",
+	cyan = "#6c8d9b", -- 錆浅葱2
+	light_blue = "#719bad",
+	blue = "#758492",
+	red = "#9d6a76",
+	orange = "#c2894b",
 	yellow = "#a39a52",
-	green = "#8da352",
-	magenta = "#9d72a3",
+	green = "#70a19f",
+	magenta = "#95728d",
 }
 
 local dark_colors = {
@@ -49,8 +49,7 @@ local dark_colors = {
 	color6 = named_color.teal, -- Ansi Cyan, term3, term6
 	color14 = named_color.cyan, -- Bright Cyan, term14
 
-	color15 = named_color.blue,
-	color16 = named_color.orange,
+	color15 = named_color.orange,
 
 	none = "NONE",
 }
