@@ -25,6 +25,7 @@ local colors = {
 return {
 	foreground = colors.shade5,
 	background = colors.background,
+	darker_background = colors.darker_background,
 
 	cursor_bg = colors.shade6,
 	cursor_fg = colors.shade0,
@@ -38,19 +39,30 @@ return {
 	split = colors.shade0,
 
 	tab_bar = {
-		background = colors.background,
+		background = colors.darker_background,
 		active_tab = {
-			bg_color = colors.shade0,
+			bg_color = "none",
 			fg_color = colors.shade5,
+			intensity = "Bold",
+			underline = "None",
+			italic = false,
+			strikethrough = false,
 		},
 		inactive_tab = {
+			bg_color = colors.darker_background,
+			fg_color = colors.shade2,
+		},
+		inactive_tab_hover = {
 			bg_color = colors.background,
-			fg_color = colors.shade5,
+			fg_color = colors.shade2,
 		},
 		new_tab = {
+			bg_color = colors.darker_background,
+			fg_color = colors.shade2,
+		},
+		new_tab_hover = {
 			bg_color = colors.background,
-			fg_color = colors.shade5,
-			italic = false,
+			fg_color = colors.shade2,
 		},
 	},
 

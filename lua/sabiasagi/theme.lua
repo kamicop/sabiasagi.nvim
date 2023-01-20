@@ -316,6 +316,7 @@ M.loadPlugins = function()
 	local plugins = {
 		-- Fern
 		FernBranchText = { fg = colors.shade4 },
+		FernWindowSelectIndicator = { fg = colors.shade5, bg = colors.color6 },
 
 		-- GitSigns
 		GitSignsAdd = { fg = colors.color2 },
