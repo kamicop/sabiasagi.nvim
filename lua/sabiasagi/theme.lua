@@ -122,7 +122,7 @@ M.loadEditor = function()
 		VisualMode = { fg = colors.color6, bg = colors.none, style = "reverse" },
 		CommandMode = { fg = colors.shade5, bg = colors.none, style = "reverse" },
 		Warnings = { fg = colors.color5 },
-		WinSeparator = { fg = colors.shade0, bg = colors.background },
+		WinSeparator = { fg = colors.shade0, bg = colors.none },
 
 		healthError = { fg = colors.color1 },
 		healthSuccess = { fg = colors.color2 },
