@@ -12,7 +12,7 @@ M.normal = {
 	a = { fg = colors.shade6, bg = colors.darker_background },
 	b = { fg = colors.shade6, bg = colors.shade0 },
 	c = { fg = colors.shade6, bg = colors.none },
-	x = { fg = colors.shade6, bg = colors.shade0 },
+	x = { fg = colors.shade6, bg = colors.none },
 	z = { fg = colors.shade6, bg = colors.darker_background },
 }
 
@@ -24,7 +24,7 @@ M.inactive = {
 	a = { fg = colors.shade6, bg = colors.darker_background },
 	b = { fg = colors.shade6, bg = colors.shade0 },
 	c = { fg = colors.shade6, bg = colors.none },
-	x = { fg = colors.shade6, bg = colors.shade0 },
+	x = { fg = colors.shade6, bg = colors.none },
 	z = { fg = colors.shade6, bg = colors.darker_background },
 }
 
