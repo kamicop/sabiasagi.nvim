@@ -93,7 +93,7 @@ M.loadEditor = function()
 		QuickFixLine = { fg = colors.shade5, bg = colors.none, style = "reverse" },
 		qfLineNr = { fg = colors.shade5, bg = colors.none, style = "reverse" },
 		Search = { fg = colors.shade7, bg = colors.color15 },
-		SignColumn = { fg = colors.shade1, bg = colors.background },
+		SignColumn = { fg = colors.shade1, bg = colors.none },
 		Substitute = { fg = colors.shade0, bg = colors.color16 },
 		SpecialKey = { fg = colors.color6 },
 		SpellBad = { fg = colors.color1, bg = colors.none, style = "italic,undercurl" },
