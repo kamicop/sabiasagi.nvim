@@ -25,7 +25,6 @@ local colors = {
 return {
 	foreground = colors.shade5,
 	background = colors.background,
-	darker_background = colors.darker_background,
 
 	cursor_bg = colors.shade6,
 	cursor_fg = colors.shade0,
