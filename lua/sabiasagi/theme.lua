@@ -331,9 +331,9 @@ M.loadPlugins = function()
 		GitSignsCurrentLineBlame = { fg = colors.shade4, style = "bold" },
 
 		-- Hop
-		HopNextKey = { fg = colors.shade5, style = "bold" },
-		HopNextKey1 = { fg = colors.color4, style = "bold" },
-		HopNextKey2 = { fg = colors.shade5 },
+		HopNextKey = { fg = colors.color10, style = "bold" },
+		HopNextKey1 = { fg = colors.color10, style = "bold" },
+		HopNextKey2 = { fg = colors.shade5, style = "bold" },
 		HopUnmatched = { fg = colors.shade3 },
 
 		-- Indent Blankline
