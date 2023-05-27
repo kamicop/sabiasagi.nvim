@@ -4,7 +4,7 @@ local colors = require("sabiasagi.colors")
 M.loadSyntax = function()
 	-- Syntax highlight groups
 	local syntax = {
-		Normal = { fg = colors.shade5, bg = colors.none },
+		Normal = { fg = colors.shade5, bg = colors.background },
 		Type = { fg = colors.color6 },
 		StorageClass = { fg = colors.color6 },
 		Structure = { fg = colors.color6 },
@@ -352,6 +352,10 @@ M.loadPlugins = function()
 		LspTroubleText = { fg = colors.shade5 },
 		LspTroubleCount = { fg = colors.color6, bg = colors.color15 },
 		LspTroubleNormal = { fg = colors.shade5, bg = colors.sidebar },
+
+		-- NvimTree
+		NvimTreeNormal = { bg = colors.darker_background },
+		NvimTreeWinSeparator = { fg = colors.background, bg = colors.background },
 	}
 	return plugins
 end

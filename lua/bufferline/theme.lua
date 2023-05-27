@@ -253,6 +253,30 @@ M.highlights = function(new_setting)
 			bold = bold,
 			italic = italic,
 		},
+
+		tab = {
+			bg = buffer_bg,
+		},
+		tab_selected = {
+			fg = buffer_fg,
+			bg = buffer_bg_selected,
+		},
+		tab_close = {
+			bg = fill,
+		},
+		tab_separator_selected = {
+			fg = fill,
+			bg = buffer_bg_selected,
+		},
+		tab_separator = {
+			fg = fill,
+			bg = buffer_bg,
+		},
+
+		offset_separator = {
+			fg = fill,
+			bg = fill,
+		},
 	}
 end
 
