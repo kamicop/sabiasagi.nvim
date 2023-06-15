@@ -39,10 +39,12 @@ M.highlights = function(new_setting)
 			bg = bg,
 		},
 		buffer_selected = {
+			fg = buffer_fg,
 			bg = buffer_bg_selected,
 			italic = italic,
 		},
 		buffer_visible = {
+			fg = buffer_fg,
 			bg = buffer_bg_visible,
 			italic = italic,
 		},
@@ -74,6 +76,7 @@ M.highlights = function(new_setting)
 		},
 
 		hint = {
+			fg = buffer_fg,
 			bg = buffer_bg,
 		},
 		hint_visible = {
