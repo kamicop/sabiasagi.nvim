@@ -4,8 +4,7 @@ local colors = require("sabiasagi.colors")
 M.loadSyntax = function()
 	-- Syntax highlight groups
 	local syntax = {
-		-- Normal = { fg = colors.shade5, bg = colors.background },
-		Normal = { fg = colors.shade5, bg = colors.shade1 },
+		Normal = { fg = colors.shade5, bg = colors.background },
 		Type = { fg = colors.color6 },
 		StorageClass = { fg = colors.color6 },
 		Structure = { fg = colors.color6 },
@@ -347,11 +346,11 @@ M.loadPlugins = function()
 		TelescopePromptBorder = { fg = colors.shade0, bg = colors.shade0 },
 		TelescopePromptCounter = { fg = colors.fg, style = "bold" },
 		TelescopePromptTitle = { fg = colors.shade5, bg = colors.color1 },
-		TelescopeResultsNormal = { bg = colors.background },
-		TelescopeResultsBorder = { fg = colors.background, bg = colors.background },
-		TelescopeResultsTitle = { fg = colors.background },
-		TelescopePreviewNormal = { bg = colors.background },
-		TelescopePreviewBorder = { fg = colors.background, bg = colors.background },
+		TelescopeResultsNormal = { bg = colors.lighter_background },
+		TelescopeResultsBorder = { fg = colors.lighter_background, bg = colors.lighter_background },
+		TelescopeResultsTitle = { fg = colors.lighter_background },
+		TelescopePreviewNormal = { bg = colors.lighter_background },
+		TelescopePreviewBorder = { fg = colors.lighter_background, bg = colors.lighter_background },
 		TelescopePreviewTitle = { fg = colors.shade5, bg = colors.color1 },
 		TelescopeSelectionCaret = { fg = colors.color6 },
 		TelescopeSelection = { fg = colors.shade7, bg = colors.shade2 },

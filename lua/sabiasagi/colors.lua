@@ -1,6 +1,7 @@
 local named_color = {
 	darker_background = "#1a1a1a",
-	background = "#212121",
+	lighter_background = "#212121",
+	main_background = "#373738",
 
 	shade0 = "#2c2c2c",
 	shade1 = "#373736",
@@ -24,7 +25,8 @@ local named_color = {
 
 local dark_colors = {
 	darker_background = named_color.darker_background,
-	background = named_color.background,
+	lighter_background = named_color.lighter_background,
+	background = named_color.main_background,
 
 	shade0 = named_color.shade0,
 	shade1 = named_color.shade1, -- Ansi Black , term0
