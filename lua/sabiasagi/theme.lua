@@ -4,7 +4,8 @@ local colors = require("sabiasagi.colors")
 M.loadSyntax = function()
 	-- Syntax highlight groups
 	local syntax = {
-		Normal = { fg = colors.shade5, bg = colors.background },
+		-- Normal = { fg = colors.shade5, bg = colors.background },
+		Normal = { fg = colors.shade5, bg = colors.shade1 },
 		Type = { fg = colors.color6 },
 		StorageClass = { fg = colors.color6 },
 		Structure = { fg = colors.color6 },
@@ -341,9 +342,17 @@ M.loadPlugins = function()
 		IndentBlanklineContextChar = { fg = colors.color15 },
 
 		-- Telescope
-		TelescopePromptBorder = { fg = colors.shade5 },
-		TelescopeResultsBorder = { fg = colors.shade5 },
-		TelescopePreviewBorder = { fg = colors.shade5 },
+		TelescopePromptPrefix = { bg = colors.shade0 },
+		TelescopePromptNormal = { bg = colors.shade0 },
+		TelescopePromptBorder = { fg = colors.shade0, bg = colors.shade0 },
+		TelescopePromptCounter = { fg = colors.fg, style = "bold" },
+		TelescopePromptTitle = { fg = colors.shade5, bg = colors.color1 },
+		TelescopeResultsNormal = { bg = colors.background },
+		TelescopeResultsBorder = { fg = colors.background, bg = colors.background },
+		TelescopeResultsTitle = { fg = colors.background },
+		TelescopePreviewNormal = { bg = colors.background },
+		TelescopePreviewBorder = { fg = colors.background, bg = colors.background },
+		TelescopePreviewTitle = { fg = colors.shade5, bg = colors.color1 },
 		TelescopeSelectionCaret = { fg = colors.color6 },
 		TelescopeSelection = { fg = colors.shade7, bg = colors.shade2 },
 		TelescopeMatching = { link = "Search" },
@@ -355,7 +364,7 @@ M.loadPlugins = function()
 
 		-- NvimTree
 		NvimTreeNormal = { bg = colors.darker_background },
-		NvimTreeWinSeparator = { fg = colors.background, bg = colors.background },
+		NvimTreeWinSeparator = { fg = colors.shade1, bg = colors.shade1 },
 	}
 	return plugins
 end

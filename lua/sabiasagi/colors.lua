@@ -55,9 +55,9 @@ local dark_colors = {
 }
 
 if vim.o.background == "dark" then
-	dark_colors.float = dark_colors.none
+	dark_colors.float = dark_colors.background
 	dark_colors.sidebar = dark_colors.darker_background
-	dark_colors.cursorlinefg = dark_colors.shade1
+	dark_colors.cursorlinefg = dark_colors.shade0
 end
 
 -- light colorsを作ったら後者をlight_colorsに変更する

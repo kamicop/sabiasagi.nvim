@@ -1,5 +1,6 @@
 local util = require("sabiasagi.util")
 local bufferline = require("bufferline.theme")
+local toggleterm = require("toggleterm.theme")
 
 local set = function()
 	-- local file = vim.fn.expand("%:p") -- 現在開いているファイルパスを取得
@@ -9,4 +10,4 @@ local set = function()
 	util.load()
 end
 
-return { set = set, bufferline = bufferline }
+return { set = set, bufferline = bufferline, toggleterm = toggleterm }
