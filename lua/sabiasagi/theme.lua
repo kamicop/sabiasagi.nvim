@@ -88,7 +88,7 @@ M.loadEditor = function()
 		Pmenu = { fg = colors.shade5, bg = colors.shade2 },
 		PmenuSel = { fg = colors.shade5, bg = colors.color15 },
 		PmenuSbar = { fg = colors.shade5, bg = colors.shade2 },
-		PmenuThumb = { fg = colors.shade5, bg = colors.cn4_gui },
+		PmenuThumb = { fg = colors.shade5, bg = colors.shade2 },
 		Question = { fg = colors.color2 },
 		QuickFixLine = { fg = colors.shade5, bg = colors.none, style = "reverse" },
 		qfLineNr = { fg = colors.shade5, bg = colors.none, style = "reverse" },
