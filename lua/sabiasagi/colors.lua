@@ -1,7 +1,7 @@
 local named_color = {
 	darker_background = "#1a1a1a",
 	lighter_background = "#212121",
-	main_background = "#373738",
+	main_background = "#252526",
 
 	shade0 = "#2c2c2c",
 	shade1 = "#373736",
@@ -62,7 +62,6 @@ if vim.o.background == "dark" then
 	dark_colors.cursorlinefg = dark_colors.shade0
 end
 
--- light colorsを作ったら後者をlight_colorsに変更する
 local colors = (vim.o.background == "dark") and dark_colors or dark_colors
 
 return colors
